@@ -1,1 +1,32 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.photo-card{
+    width: 340px;
+    height: 260px;
+    //border: 1px solid blue;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    & img{
+        border-radius: inherit;
+        width: inherit;
+        height: 200px;
+        // height: auto;
+        object-fit: fill;
+    }
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info-item{
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
