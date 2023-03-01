@@ -1,3 +1,4 @@
+import "./sass/_index.scss";
 import axios from 'axios';
 
 const refs = {
