@@ -1,7 +1,9 @@
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    column-gap: 22px;
 }
 
 .photo-card{
@@ -13,7 +15,7 @@
     & img{
         border-radius: inherit;
         width: inherit;
-        height: 200px;
+        height: 240px;
         // height: auto;
         object-fit: fill;
     }
