@@ -6,6 +6,11 @@
     column-gap: 22px;
 }
 
+.gallery a {
+    text-decoration: none;
+    color: black;
+}
+
 .photo-card{
     width: 340px;
     height: 260px;
@@ -17,7 +22,7 @@
         width: inherit;
         height: 240px;
         // height: auto;
-        object-fit: fill;
+        object-fit: cover;
     }
 }
 
@@ -30,5 +35,7 @@
 .info-item{
     margin: 0;
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
 }
