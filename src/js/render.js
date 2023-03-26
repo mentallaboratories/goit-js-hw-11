@@ -1,16 +1,11 @@
 import "../sass/_index.scss";
 import {refs} from "../index";
-import Notiflix from "notiflix";
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 export const render = (data) => {
     let markupItem = '';
     let markup = '';
-    console.log(data.hits);
-// markup cycle
-if (data.hits.length === 0){Notiflix.Notify.failure('Sorry, there are no images matching your search query. Please try again.');
-}else{
     for(const hit of data.hits){
       markupItem = (`<a href="${hit.largeImageURL}">
       <div class="photo-card">
@@ -36,7 +31,7 @@ if (data.hits.length === 0){Notiflix.Notify.failure('Sorry, there are no images 
     refs.gallery.insertAdjacentHTML('beforeend',markup);
     simpleLightBox.refresh();
   }
-}
+//}
 
 const simpleLightBox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt', 
